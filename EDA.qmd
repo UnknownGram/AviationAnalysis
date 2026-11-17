@@ -1,0 +1,38 @@
+---
+title: "EDA"
+format: typst
+editor: visual
+author: "Terrence Steele"
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+library("tidyverse")
+library("tidymodel")
+#library("tidyverse")
+#library("tidyverse")
+```
+
+Looking at the Data
+
+```{r}
+financials = read.csv("/cloud/project/airline_financials.csv")
+financials
+orders = read.csv("/cloud/project/fleet_orders.csv")
+orders
+incidents = read.csv("/cloud/project/aviation_incidents.csv")
+incidents
+traffic = read.csv("/cloud/project/passenger_traffic.csv")
+traffic
+route = read.csv("/cloud/project/route_performance.csv")
+route
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
